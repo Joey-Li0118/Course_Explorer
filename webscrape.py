@@ -68,24 +68,6 @@ def parser(matching_links):
   return df
   
             
-        #print(infos.text) 
-      
-      
-      
-     
-     # r = requests.get(url)
-    #  soup = BeautifulSoup(r.text, "html.parser")
-     # table = soup.find(id = "section-dt")
-      #tables = pd.read_html(url) 
-      
-                
-     # th = table.find_all("td", class_ = "app-meeting")
-      #for t in th:
-       # print(t.text)
-    #final_link = table.find("td").renderContents().strip()
-    #for s in final_link:
-    #    print(str(s))
-  #index+= 1
 
 
 
@@ -105,5 +87,5 @@ df2 = parser(subjects)
 print(df2)
 df2.to_excel("course_explorer.xlsx",
              sheet_name='Sheet_name_1', index = False)
-# Extract the 'href' attribute value
+
 
